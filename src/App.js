@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import ArrowSelector from './components/ArrowSelector';
-import ArrowSVG from './components/ArrowSVG';
+import ArrowSelector from './Components/ArrowSelector';
+import ArrowSVG from './Components/ArrowSVG';
 
 function App() {
   const [isExerciseActive, setIsExerciseActive] = useState(false);
