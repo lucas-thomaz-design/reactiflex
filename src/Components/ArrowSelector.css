@@ -1,0 +1,48 @@
+/* src/components/ArrowSelector.css */
+.arrow-selector {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .arrow-box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #689ef6;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .arrow-box .arrow-svg {
+    fill: #689ef6; /* Cor padrão (azul) */
+    transition: fill 0.2s ease-in-out;
+  }
+  
+  .arrow-box:hover .arrow-svg {
+    fill: #2563EB; /* Cor ao passar o mouse (azul escuro) */
+  }
+  
+  .arrow-box.selected {
+    background-color: #3B82F6;
+    border-color: #2563EB;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(59, 130, 246, 0.5);
+  }
+  
+  .arrow-box.selected .arrow-svg {
+    fill: #FFFFFF; /* Cor da seta selecionada (branco) */
+  }
+  
+  .arrow-box:hover {
+    border-color: #2563EB;
+    transform: scale(1.05);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  }
+  

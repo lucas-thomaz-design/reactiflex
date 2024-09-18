@@ -1,38 +1,297 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: 'Inria Sans', sans-serif;
+  text-align: left;
+  padding: 20px;
+  background-color: #F3F4F6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+
+/* src/App.css */
+
+
+.settings, .exercise, .countdown {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.exercise, .countdown {
+  align-items: center;
+}
+
+
+
+.title {
+  
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1; 
+  
+}
+
+.config-option {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0px;
+  width: 100%;
+}
+
+.config-option-form {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+
+}
+.input-time {
+  padding: 10px;
+  border: 2px solid #D1D5DB;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-time:focus {
+  outline: none;
+  border-color: #3B82F6;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+}
+
+
+
+
+.countdown-number {
+  font-size: 6rem;
+  color: #3b82f6;
+  animation: countdown-animation 1s ease-in-out infinite;
+}
+
+@keyframes countdown-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.arrow-display {
+  background-color: #2563EB;
   color: white;
+  font-size: 80px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  fill: #689ef6;
+  width: 100%;
+  text-align: center;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.arrow-svg {
+  fill: #FFFFFF
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.progress-container {
+  width: 80%;
+  height: 20px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #3b82f6;
+  transform-origin: left;
+}
+
+@keyframes progress-animation {
+  0% {
+    transform: scaleX(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: scaleX(1);
   }
+}
+
+.start-btn, .stop-btn {
+
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 18px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+.start-btn:hover {
+  background-color: #2563EB;
+}
+
+.start-btn:disabled {
+  background-color: #A7A9AC;
+  cursor: not-allowed;
+}
+
+.stop-btn {
+  background-color: #EF4444;
+}
+
+.stop-btn:hover {
+  background-color: #DC2626;
+}
+
+p {
+  color: #6b81ad;
+  font-weight: 400;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+}
+
+.label {
+  font-weight: 700;
+  color: #273a60;
+}
+
+h1 {
+  color: #111827;
+  font-weight: bolder;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+}
+
+/*
+.settings, .exercise {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.config-option {
+  padding-top: 16px;
+  text-align: left;
+}
+
+
+
+.start-btn, .stop-btn {
+  background-color: #3B82F6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.start-btn:hover {
+  background-color: #2563EB;
+}
+
+.start-btn:disabled {
+  background-color: #A7A9AC;
+  cursor: not-allowed;
+}
+
+.stop-btn {
+  background-color: #EF4444;
+}
+
+.stop-btn:hover {
+  background-color: #DC2626;
+}
+
+.arrow-display {
+  background-color: #2563EB;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  fill: #689ef6;
+}
+
+.arrow-svg {
+  fill: #FFFFFF
+}*/
+
+
+
+.inria-sans-light {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inria-sans-regular {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-sans-bold {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inria-sans-light-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inria-sans-regular-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inria-sans-bold-italic {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
 }
