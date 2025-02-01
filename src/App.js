@@ -146,29 +146,18 @@ function Settings({
           disabled={isRandomInterval}
           className="input-time"
         />
-        /*<label>
-          <input
-            type="checkbox"
-            checked={isRandomInterval}
-            onChange={() => setIsRandomInterval(!isRandomInterval)}
-          />
-          Intervalo Aleatório
-        </label>*/
-  <div class="checkbox-wrapper-4">
-  <input class="inp-cbx" id="random" type="checkbox"/>
-  <label class="cbx" for="random"><span>
-  <svg width="12px" height="10px">
-    <use href="#check-4"></use>
-  </svg></span><span>Intervalo Aleatório</span></label>
-  <svg class="inline-svg">
-    <symbol id="check-4" viewbox="0 0 12 10">
-      <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-    </symbol>
-  </svg>
-</div>
-
-
-        
+          <div class="checkbox-wrapper-4">
+            <input class="inp-cbx" id="random" type="checkbox"/>
+            <label class="cbx" for="random"><span>
+            <svg width="12px" height="10px">
+              <use href="#check-4"></use>
+            </svg></span><span>Intervalo Aleatório</span></label>
+            <svg class="inline-svg">
+              <symbol id="check-4" viewbox="0 0 12 10">
+                <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+              </symbol>
+            </svg>
+          </div>
         </div>
       </div>
 
