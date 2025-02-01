@@ -34,8 +34,6 @@
   align-items: center;
 }
 
-
-
 .title {
   
   display: flex;
@@ -62,6 +60,21 @@
   align-items: center;
 
 }
+
+
+input[type="checkbox"] {
+  accent-color: #3B82F6;
+  width: 20px;
+  height: 20px; 
+  cursor: pointer; 
+}
+
+input[type="checkbox"] + label {
+  font-size: 16px;
+  color: #273a60;
+  margin-left: 8px; 
+}
+
 .input-time {
   padding: 10px;
   border: 2px solid #D1D5DB;
@@ -75,9 +88,6 @@
   border-color: #3B82F6;
   box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
 }
-
-
-
 
 .countdown-number {
   font-size: 6rem;
@@ -196,68 +206,6 @@ h1 {
   margin-block-start: 8px;
   margin-block-end: 8px;
 }
-
-/*
-.settings, .exercise {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.config-option {
-  padding-top: 16px;
-  text-align: left;
-}
-
-
-
-.start-btn, .stop-btn {
-  background-color: #3B82F6;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px;
-  font-size: 16px;
-  transition: background-color 0.2s ease;
-}
-
-.start-btn:hover {
-  background-color: #2563EB;
-}
-
-.start-btn:disabled {
-  background-color: #A7A9AC;
-  cursor: not-allowed;
-}
-
-.stop-btn {
-  background-color: #EF4444;
-}
-
-.stop-btn:hover {
-  background-color: #DC2626;
-}
-
-.arrow-display {
-  background-color: #2563EB;
-  color: white;
-  font-size: 80px;
-  font-weight: bold;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  fill: #689ef6;
-}
-
-.arrow-svg {
-  fill: #FFFFFF
-}*/
-
 
 
 .inria-sans-light {
