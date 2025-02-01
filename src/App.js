@@ -146,14 +146,14 @@ function Settings({
           disabled={isRandomInterval}
           className="input-time"
         />
-        //<label>
-          //<input
-            //type="checkbox"
-            //checked={isRandomInterval}
-            //onChange={() => setIsRandomInterval(!isRandomInterval)}
-          ///>
-          //Intervalo Aleatório
-        //</label>
+        /*<label>
+          <input
+            type="checkbox"
+            checked={isRandomInterval}
+            onChange={() => setIsRandomInterval(!isRandomInterval)}
+          />
+          Intervalo Aleatório
+        </label>*/
   <div class="checkbox-wrapper-4">
   <input class="inp-cbx" id="random" type="checkbox"/>
   <label class="cbx" for="random"><span>
