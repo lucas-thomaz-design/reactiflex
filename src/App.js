@@ -158,7 +158,7 @@ function Settings({
   <input class="inp-cbx" id="random" type="checkbox"/>
   <label class="cbx" for="random"><span>
   <svg width="12px" height="10px">
-    <use xlink:href="#check-4"></use>
+    <use href="#check-4"></use>
   </svg></span><span>Intervalo Aleatório</span></label>
   <svg class="inline-svg">
     <symbol id="check-4" viewbox="0 0 12 10">
